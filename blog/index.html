@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Blog — Joe Qiao</title>
+<meta name="description" content="Notes, talks and slides by Joe Qiao — design thinking, design systems, motion and AI-driven design engineering.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
+<style>
+  /* Tokens lifted from the Framer export of the home page */
+  :root{
+    --bg:#0e0e0c;
+    --nav-bg:#0e0e0cd1;
+    --card:#11100e;
+    --card-border:#24211d;
+    --rule:#1f1d19;
+    --ink:#f4f1ea;
+    --ink-2:#a8a39a;
+    --ink-3:#6b665d;
+    --blue-light:#9cc0ff;
+    --blue:#1a60d9;
+    --serif:"Instrument Serif",serif;
+    --mono:"JetBrains Mono",ui-monospace,monospace;
+    --ease:cubic-bezier(.44,0,.56,1);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{background:var(--bg);-webkit-font-smoothing:antialiased}
+  body{background:var(--bg);color:var(--ink);font-family:var(--mono);min-height:100vh}
+  a{color:inherit;text-decoration:none}
+
+  .wrap{max-width:1440px;margin:0 auto}
+
+  /* ---------- Nav ---------- */
+  .nav{position:sticky;top:0;z-index:10;background:var(--nav-bg);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+  .nav .wrap{display:flex;align-items:center;justify-content:space-between;padding:22px 34px}
+  .mono-s{font:300 12px/1.4 var(--mono);letter-spacing:.08em;text-transform:uppercase}
+  .mono-m{font:300 14px/1.4 var(--mono);letter-spacing:.08em;text-transform:uppercase}
+  .logo{color:var(--ink)}
+  .links{display:flex;gap:32px}
+  .links a{color:var(--ink-2);transition:color .2s var(--ease)}
+  .links a:hover,.links a[aria-current]{color:var(--ink)}
+  .status{display:flex;align-items:center;gap:8px;color:var(--ink-2)}
+  .status i{width:6px;height:6px;border-radius:50%;background:#4ade80;box-shadow:0 0 8px #4ade8099}
+
+  /* ---------- Section ---------- */
+  .section{display:flex;flex-direction:column;gap:56px;padding:110px 34px;border-bottom:1px solid var(--rule)}
+  .head{display:flex;gap:80px;align-items:flex-start}
+  .head .label{width:160px;flex:none;color:var(--ink-3)}
+  .head h1{width:520px;font:400 58px/.95 var(--serif);letter-spacing:-.045em;text-indent:-.06em;text-wrap:balance}
+  .c-light{color:var(--blue-light)} .c-blue{color:var(--blue)}
+
+  /* ---------- Grid (same as Selected Work) ---------- */
+  .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+  .card{display:flex;flex-direction:column;background:var(--card);border:1px solid var(--card-border);overflow:hidden;min-width:0}
+  .card.feature{grid-column:span 2}
+  .visual{position:relative;width:100%;aspect-ratio:16/9;overflow:hidden}
+  .visual>.inner{position:absolute;inset:0;transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+  a.card:hover .visual>.inner{transform:scale(1.025)}
+  .caption{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;padding:22px}
+  .caption .copy{display:flex;flex-direction:column;gap:8px;min-width:0}
+  .caption .tag{color:var(--ink-3)}
+  .caption .title{color:var(--ink)}
+  .arrow{color:var(--ink);transition:transform .3s var(--ease)}
+  a.card:hover .arrow{transform:translate(3px,-3px)}
+  .card.soon{cursor:default}
+  .card.soon .title{color:var(--ink-2)}
+  .card.soon .arrow{color:var(--ink-3)}
+
+  /* ---------- Visual: slide-deck cover (feature) ---------- */
+  .deck{background:#0b0b0a;display:flex}
+  .deck .stack{position:absolute;inset:9% 7% 11% 7%}
+  .deck .slide{position:absolute;inset:0;border:1px solid #2a2722;background:#141310}
+  .deck .slide.s3{transform:translate(28px,-28px);opacity:.35}
+  .deck .slide.s2{transform:translate(14px,-14px);opacity:.6}
+  .deck .slide.s1{background:linear-gradient(160deg,#16150f 0%,#11100e 60%);display:flex;flex-direction:column;justify-content:space-between;padding:clamp(18px,3.4vw,48px)}
+  .deck .top,.deck .bot{display:flex;justify-content:space-between;color:var(--ink-3)}
+  .deck h2{font:400 clamp(44px,8.6vw,132px)/.9 var(--serif);letter-spacing:-.045em;color:var(--ink)}
+  .deck h2 em{font-style:italic;color:var(--blue-light)}
+  .deck .dots{position:absolute;right:clamp(18px,3.4vw,48px);top:50%;transform:translateY(-50%);display:flex;flex-direction:column;gap:10px}
+  .deck .dots b{width:28px;height:2px;background:#2e2b25}
+  .deck .dots b:first-child{background:var(--blue)}
+  /* the five stages, drawn as a strip */
+  .deck .stages{display:flex;gap:clamp(6px,1vw,14px);margin-top:clamp(10px,2vw,28px)}
+  .deck .stages span{padding:6px 10px;border:1px solid #2e2b25;color:var(--ink-2);white-space:nowrap}
+  .deck .stages span:nth-child(1){border-color:var(--blue);color:var(--blue-light)}
+
+  /* ---------- Visual: placeholder ---------- */
+  .ph{background:#0f0e0c}
+  .ph .inner{display:flex;align-items:center;justify-content:center}
+  .ph .grid-bg{position:absolute;inset:0;background-image:linear-gradient(#1a1916 1px,transparent 1px),linear-gradient(90deg,#1a1916 1px,transparent 1px);background-size:48px 48px;background-position:-1px -1px;mask-image:radial-gradient(ellipse at center,#000 30%,transparent 78%);-webkit-mask-image:radial-gradient(ellipse at center,#000 30%,transparent 78%)}
+  .ph .num{position:relative;font:400 clamp(96px,14vw,200px)/1 var(--serif);letter-spacing:-.05em;color:#1d1b17}
+  .ph .num em{font-style:italic}
+  .ph .badge{position:absolute;left:22px;top:22px;color:var(--ink-3);display:flex;align-items:center;gap:8px}
+  .ph .badge i{width:6px;height:6px;border:1px solid var(--ink-3);border-radius:50%}
+  .ph .glow{position:absolute;width:60%;aspect-ratio:1;border-radius:50%;filter:blur(60px);opacity:.18}
+
+  /* ---------- Footer ---------- */
+  .foot{display:flex;justify-content:space-between;gap:24px;padding:40px 34px 48px;color:var(--ink-3)}
+  .foot a{color:var(--ink-2);transition:color .2s var(--ease)}
+  .foot a:hover{color:var(--ink)}
+
+  /* ---------- Responsive (Framer breakpoints) ---------- */
+  @media (max-width:1199px){
+    .head{gap:48px}
+  }
+  @media (max-width:809px){
+    .nav .wrap{padding:18px 16px}
+    .links{gap:18px}
+    .links .hide-m,.status{display:none}
+    .section{padding:72px 16px;gap:40px}
+    .head{flex-direction:column;gap:20px}
+    .head h1{width:auto;font-size:44px}
+    .grid{grid-template-columns:minmax(0,1fr);gap:16px}
+    .card.feature{grid-column:auto}
+    .card.feature .visual{aspect-ratio:4/3}
+    .deck .stages span:nth-child(n+4),.deck .dots{display:none}
+    .caption{padding:18px}
+    .mono-m{font-size:13px}
+    .foot{flex-direction:column;padding:32px 16px 40px}
+  }
+  @media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="wrap">
+    <a class="logo mono-m" href="/">JQ /</a>
+    <div class="links mono-s">
+      <a href="/#work">Work</a>
+      <a class="hide-m" href="/#about">About</a>
+      <a class="hide-m" href="/#focus">Focus</a>
+      <a href="/#contact">Contact</a>
+      <a href="/blog/" aria-current="page">Blog</a>
+    </div>
+    <div class="status mono-s"><i></i>Available</div>
+  </div>
+</nav>
+
+<main class="wrap">
+  <section class="section">
+    <div class="head">
+      <p class="label mono-s">01 — Blog</p>
+      <h1>Notes &amp; <span class="c-light">slides,</span><br>from the <span class="c-blue">design desk.</span></h1>
+    </div>
+
+    <div class="grid" id="grid"></div>
+  </section>
+
+  <footer class="foot mono-s">
+    <span>©2026 Joe Qiao — Sweden, GMT+1</span>
+    <a href="/">← Back to home</a>
+  </footer>
+</main>
+
+<script>
+/*
+  ADD A NEW ENTRY: copy one object in POSTS and edit it.
+  - feature: true  → full-width card (like the first card on the home page)
+  - href: null     → shows as "Coming soon" (not clickable)
+  - visual: "deck" (slide cover) | "placeholder" | an image/video URL
+*/
+const POSTS = [
+  {
+    feature: true,
+    tag: "Slides · Workshop · Design Thinking",
+    title: "Design Thinking — from empathy to prototype",
+    href: "/blog/design-thinking/",
+    visual: "deck"
+  },
+  { tag: "Essay · AI · Engineering",      title: "Harness engineering with AI",          href: null, visual: "placeholder", glow: "#1a60d9" },
+  { tag: "Notes · Design System",         title: "Design system architecture, in practice", href: null, visual: "placeholder", glow: "#9cc0ff" },
+  { tag: "Guide · Motion · Lottie",       title: "Motion standards that scale",          href: null, visual: "placeholder", glow: "#c9a46a" },
+  { tag: "Talk · Innovation",             title: "Strategic foresight for product teams", href: null, visual: "placeholder", glow: "#6aa88f" }
+];
+
+const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+function visualHTML(p, i){
+  if (p.visual === "deck") return `
+    <div class="visual deck"><div class="inner">
+      <div class="stack">
+        <div class="slide s3"></div><div class="slide s2"></div>
+        <div class="slide s1">
+          <div class="top mono-s"><span>JQ / Workshop</span><span>01 / —</span></div>
+          <div>
+            <h2>Design <em>Thinking</em></h2>
+            <div class="stages mono-s"><span>Empathize</span><span>Define</span><span>Ideate</span><span>Prototype</span><span>Test</span></div>
+          </div>
+          <div class="bot mono-s"><span>Web slides</span><span>Open deck ↗</span></div>
+          <div class="dots"><b></b><b></b><b></b><b></b></div>
+        </div>
+      </div>
+    </div></div>`;
+  if (p.visual === "placeholder" || !p.visual) {
+    const n = String(i + 1).padStart(2, "0");
+    return `
+    <div class="visual ph"><div class="inner">
+      <div class="grid-bg"></div>
+      <div class="glow" style="background:${esc(p.glow || "#1a60d9")}"></div>
+      <div class="num"><em>${n}</em></div>
+      <div class="badge mono-s"><i></i>${p.href ? "New" : "Coming soon"}</div>
+    </div></div>`;
+  }
+  const isVideo = /\.(mp4|webm)(\?|$)/i.test(p.visual);
+  return `<div class="visual"><div class="inner">${
+    isVideo
+      ? `<video src="${esc(p.visual)}" autoplay muted loop playsinline style="width:100%;height:100%;object-fit:cover;display:block"></video>`
+      : `<img src="${esc(p.visual)}" alt="" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block">`
+  }</div></div>`;
+}
+
+document.getElementById("grid").innerHTML = POSTS.map((p, i) => {
+  const cls = `card${p.feature ? " feature" : ""}${p.href ? "" : " soon"}`;
+  const open = p.href ? `<a class="${cls}" href="${esc(p.href)}">` : `<div class="${cls}" aria-disabled="true">`;
+  const close = p.href ? `</a>` : `</div>`;
+  return `${open}
+    ${visualHTML(p, i)}
+    <div class="caption">
+      <div class="copy">
+        <p class="tag mono-s">${esc(p.tag)}</p>
+        <p class="title mono-m">${esc(p.title)}</p>
+      </div>
+      <span class="arrow mono-m">${p.href ? "↗" : "—"}</span>
+    </div>
+  ${close}`;
+}).join("");
+</script>
+</body>
+</html>
