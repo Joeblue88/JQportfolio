@@ -68,23 +68,6 @@
   .card.soon .title{color:var(--ink-2)}
   .card.soon .arrow{color:var(--ink-3)}
 
-  /* ---------- Visual: slide-deck cover (feature) ---------- */
-  .deck{background:#0b0b0a;display:flex}
-  .deck .stack{position:absolute;inset:9% 7% 11% 7%}
-  .deck .slide{position:absolute;inset:0;border:1px solid #2a2722;background:#141310}
-  .deck .slide.s3{transform:translate(28px,-28px);opacity:.35}
-  .deck .slide.s2{transform:translate(14px,-14px);opacity:.6}
-  .deck .slide.s1{background:linear-gradient(160deg,#16150f 0%,#11100e 60%);display:flex;flex-direction:column;justify-content:space-between;padding:clamp(18px,3.4vw,48px)}
-  .deck .top,.deck .bot{display:flex;justify-content:space-between;color:var(--ink-3)}
-  .deck h2{font:400 clamp(44px,8.6vw,132px)/.9 var(--serif);letter-spacing:-.045em;color:var(--ink)}
-  .deck h2 em{font-style:italic;color:var(--blue-light)}
-  .deck .dots{position:absolute;right:clamp(18px,3.4vw,48px);top:50%;transform:translateY(-50%);display:flex;flex-direction:column;gap:10px}
-  .deck .dots b{width:28px;height:2px;background:#2e2b25}
-  .deck .dots b:first-child{background:var(--blue)}
-  /* the five stages, drawn as a strip */
-  .deck .stages{display:flex;gap:clamp(6px,1vw,14px);margin-top:clamp(10px,2vw,28px)}
-  .deck .stages span{padding:6px 10px;border:1px solid #2e2b25;color:var(--ink-2);white-space:nowrap}
-  .deck .stages span:nth-child(1){border-color:var(--blue);color:var(--blue-light)}
 
   /* ---------- Visual: placeholder ---------- */
   .ph{background:#0f0e0c}
@@ -114,8 +97,6 @@
     .head h1{width:auto;font-size:44px}
     .grid{grid-template-columns:minmax(0,1fr);gap:16px}
     .card.feature{grid-column:auto}
-    .card.feature .visual{aspect-ratio:4/3}
-    .deck .stages span:nth-child(n+4),.deck .dots{display:none}
     .caption{padding:18px}
     .mono-m{font-size:13px}
     .foot{flex-direction:column;padding:32px 16px 40px}
@@ -160,15 +141,15 @@
   ADD A NEW ENTRY: copy one object in POSTS and edit it.
   - feature: true  → full-width card (like the first card on the home page)
   - href: null     → shows as "Coming soon" (not clickable)
-  - visual: "deck" (slide cover) | "placeholder" | an image/video URL
+  - visual: "placeholder" | an image/video URL (16:9 looks best)
 */
 const POSTS = [
   {
     feature: true,
-    tag: "Slides · Workshop · Design Thinking",
-    title: "Design Thinking — from empathy to prototype",
+    tag: "Slides · Design Thinking · 中文 / EN",
+    title: "设计思维，从人开始 — Design starts with one person",
     href: "/blog/design-thinking/",
-    visual: "deck"
+    visual: "/blog/design-thinking/cover.jpg"
   },
   { tag: "Essay · AI · Engineering",      title: "Harness engineering with AI",          href: null, visual: "placeholder", glow: "#1a60d9" },
   { tag: "Notes · Design System",         title: "Design system architecture, in practice", href: null, visual: "placeholder", glow: "#9cc0ff" },
@@ -179,21 +160,6 @@ const POSTS = [
 const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 
 function visualHTML(p, i){
-  if (p.visual === "deck") return `
-    <div class="visual deck"><div class="inner">
-      <div class="stack">
-        <div class="slide s3"></div><div class="slide s2"></div>
-        <div class="slide s1">
-          <div class="top mono-s"><span>JQ / Workshop</span><span>01 / —</span></div>
-          <div>
-            <h2>Design <em>Thinking</em></h2>
-            <div class="stages mono-s"><span>Empathize</span><span>Define</span><span>Ideate</span><span>Prototype</span><span>Test</span></div>
-          </div>
-          <div class="bot mono-s"><span>Web slides</span><span>Open deck ↗</span></div>
-          <div class="dots"><b></b><b></b><b></b><b></b></div>
-        </div>
-      </div>
-    </div></div>`;
   if (p.visual === "placeholder" || !p.visual) {
     const n = String(i + 1).padStart(2, "0");
     return `
