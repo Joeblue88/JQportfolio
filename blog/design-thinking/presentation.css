@@ -1,0 +1,251 @@
+:root{--paper:#faf9f6;--ink:#111111;--muted:#606060;--line:#d5d5d5;--accent:#625e00;--soft:#ededed;--blue:#625e00;color-scheme:light}*{box-sizing:border-box}body{margin:0;background:#e7e7e7;color:var(--ink);font-family:'Manrope','Noto Sans SC',sans-serif}button,input{font:inherit}button{color:inherit;cursor:pointer;border:1px solid transparent;background:transparent;border-radius:0;padding:10px 14px}button:hover{background:#e9e9e9}button:disabled{opacity:.3;cursor:default}button:focus-visible,a:focus-visible,input:focus-visible,summary:focus-visible{outline:2px solid var(--accent);outline-offset:3px}button[aria-pressed=true]{color:var(--accent)}svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.6;vertical-align:middle}::selection{background:#f7f250;color:var(--ink)}.shell{height:100svh;display:flex;flex-direction:column}#screen{flex:1;position:relative;overflow:hidden;min-height:0;display:flex;justify-content:center;align-items:center}#frame{width:1600px;height:900px;flex-shrink:0;position:absolute;background:var(--paper);transform-origin:center;overflow:hidden}#geometry{position:absolute;left:650px;top:65px;width:900px;height:700px;pointer-events:auto}.copy{position:absolute;left:86px;top:105px;width:570px}h1{font-size:72px;line-height:1.14;font-weight:400;letter-spacing:-.02em;margin:0;white-space:pre-line;text-wrap:balance;max-width:570px}.lead{font-size:24px;line-height:1.65;margin:30px 0 0;color:var(--muted);max-width:550px}.detail{margin-top:66px;position:relative;min-height:210px;max-width:520px}.detail h2{font-size:31px;line-height:1.4;font-weight:400;margin:0 0 18px;white-space:pre-line}.detail p{font-size:25px;line-height:1.75;margin:0;white-space:pre-line;max-width:520px}.detail .ordinal{display:block;font-size:15px;color:var(--accent);margin-bottom:16px;letter-spacing:.03em}.detail .detail-foot{font-size:17px;color:var(--muted);margin-top:18px;line-height:1.6}.intro{border:1px solid var(--ink);padding:15px 24px;font-size:19px;margin-top:42px}.intro svg{fill:currentColor;stroke:none;margin-left:18px}.cover .copy{top:230px;width:720px}.cover h1{font-size:86px;max-width:680px;line-height:1.15}.cover .lead{font-size:24px;margin-top:32px}.cover .detail{display:none}.closing .copy{top:145px}.closing .detail{margin-top:45px}.closing .detail h2{font-size:34px;line-height:1.6}.film .copy{top:285px;width:810px}.film h1{font-size:86px;max-width:790px}.film .detail,.film #intro,.film .slide-foot{display:none}.slide-foot{position:absolute;left:86px;right:86px;bottom:44px;display:flex;align-items:center;justify-content:space-between;border-top:1px solid var(--line);padding-top:22px}.slide-foot #chapters{display:flex;gap:30px}.slide-foot button{padding:4px 0;font-size:17px;color:var(--muted);position:relative}.slide-foot button.active{color:var(--ink)}.slide-foot button.active:before{content:'';width:5px;height:5px;background:var(--accent);border-radius:50%;position:absolute;left:-14px;top:14px}#sceneCount{font-size:18px;font-variant-numeric:tabular-nums;color:var(--muted)}#diagramhint{position:absolute;left:728px;right:85px;top:758px;font-size:16px;color:var(--muted);text-align:center;white-space:pre-line}#filmprogress{position:absolute;bottom:0;left:0;width:100%;height:3px;background:var(--accent);transform:scaleX(0);transform-origin:left}#blackout{position:absolute;inset:0;background:#1e2120}.toolbar{height:62px;flex-shrink:0;border-top:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 22px;gap:18px;background:var(--paper);font-size:13px}.navigation,.utility{display:flex;gap:3px;align-items:center}.primary{border:1px solid var(--line);min-width:100px}.primary svg{margin-left:6px}#buildCount{margin-left:14px;color:var(--muted);font-size:12px;min-width:50px;font-variant-numeric:tabular-nums}.shortcuts{color:var(--muted);font-size:11px}dialog{padding:35px;border:1px solid var(--line);width:min(1000px,94vw);max-height:90svh;background:var(--paper);color:var(--ink)}dialog::backdrop{background:#20222280}.dialogtop{display:flex;justify-content:space-between;align-items:center;gap:12px}.dialogtop h2{font-size:27px;font-weight:400;margin:0}p.introtext{font-size:14px;line-height:1.8;color:var(--muted)}input{width:100%;padding:15px 0;background:transparent;color:var(--ink);border:0;border-bottom:1px solid var(--line);caret-color:var(--accent);margin-bottom:20px;font-size:16px}input::placeholder{color:var(--muted)}.outlineGroup h3{font-size:15px;color:var(--muted);font-weight:400;padding-top:25px}.outlineRow{display:flex;width:100%;text-align:left;align-items:center;padding:12px 0;border-bottom:1px solid var(--line);gap:20px}.outlineRow .sceneNo{color:var(--muted);font-size:13px;width:24px;font-variant-numeric:tabular-nums}.outlineRow .name{font-size:20px;flex:1}.outlineRow .type{font-size:11px;color:var(--muted)}.outlineRow.active{color:var(--accent)}#notesPanel{position:fixed;right:0;top:0;bottom:62px;width:min(530px,94vw);background:var(--paper);padding:30px;overflow:auto;border-left:1px solid var(--line);box-shadow:-12px 0 40px #20222212;z-index:3}#notesPanel h3{font-size:24px;line-height:1.4;margin:32px 0 18px}#notesPanel h4{font-size:15px;font-weight:600;margin:28px 0 12px}#notesPanel p{font-size:14px;line-height:1.9;white-space:pre-line}#fullContent .noteitem{padding:12px 0;border-bottom:1px solid var(--line)}#fullContent strong{font-size:15px;font-weight:400}#fullContent p{margin:6px 0}.notechange{padding:18px;background:var(--soft);font-size:13px;line-height:1.8;margin-top:24px}#sourceRefs a{display:block;color:var(--blue);font-size:13px;line-height:1.6;margin:10px 0;text-underline-offset:4px}details{margin-top:26px;font-size:14px}summary{cursor:pointer}pre{font:12px/1.8 'Manrope','Noto Sans SC',sans-serif;white-space:pre-wrap;word-break:break-word;color:var(--muted)}.sourcefile{font-size:11px;word-break:break-word;color:var(--muted)}.small{font-size:11px!important;color:var(--muted)}[hidden]{display:none!important}::-webkit-scrollbar{width:7px}::-webkit-scrollbar-thumb{background:#b8b8b8;border-radius:4px}@media(max-width:1100px){.shortcuts{display:none}}@media(max-width:650px){.toolbar{height:106px;flex-wrap:wrap;justify-content:center;align-content:center;gap:7px;padding:10px 8px}.utility{width:100%;justify-content:center}.utility button{padding:7px 10px;font-size:12px}#notesPanel{bottom:106px}dialog{padding:20px}.outlineRow .name{font-size:16px}.outlineRow .type{display:none}#screen{min-height:250px}}@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}body.still *{animation:none!important}@media print{.toolbar,canvas,.intro,#notesPanel{display:none!important}.shell,#screen{height:auto;display:block;overflow:visible}#frame{position:static;transform:none!important;width:auto;height:auto;background:white}.copy{position:static;width:auto;padding:30px}h1{font-size:34px}.detail{display:block!important}.detail p{font-size:16px}.slide-foot{position:static;padding:20px}.slide-foot #chapters{display:none}}
+
+/* The stage is a composed lecture surface; controls stay outside it. */
+#particleSpace{position:absolute;left:650px;top:65px;width:900px;height:700px;pointer-events:none}
+.copy{z-index:1}#diagramhint{display:none!important}
+.copy-ghost,.detail-ghost{pointer-events:none;user-select:none;z-index:2}
+.copy-ghost{position:absolute}.detail-ghost{position:absolute;left:0;width:100%;margin:0!important}
+.is-dark #frame{--paper:#101110;--ink:#f0f0ee;--muted:#ababab;--line:#424242;--accent:#f7f250;background:var(--paper);color:var(--ink)}
+.is-dark .intro{border-color:#777777}.is-dark .intro:hover{background:#2b2b2b}
+.is-dark #frame #chapters button:hover{background:#2b2b2b}
+#frame{transition:background-color 900ms cubic-bezier(.4,0,.2,1),color 900ms cubic-bezier(.4,0,.2,1)}
+#chapters .active:before{width:6px;height:6px}#filmprogress{height:2px}
+button{transition:background-color 180ms ease,color 180ms ease,border-color 180ms ease}
+#buildCount{min-width:76px}.primary{min-width:110px}.ordinal{display:none!important}
+@media(prefers-reduced-motion:reduce){#frame{transition:none}}
+
+#geometry{z-index:0}#particleSpace{z-index:1}#geometryLabels{position:absolute;left:650px;top:65px;width:900px;height:700px;pointer-events:none;z-index:2}.copy{z-index:3}.copy-ghost{z-index:4}#blackout{z-index:5}
+
+
+/* Fixed narrative stage. Type and planes share a deliberate two-column grid. */
+:root{--signal:#f7f250;--ink:#111111;--paper:#fcfafa;--soft:#eceae8;--line:#d6d3d0;--accent:#625e00;--blue:#625e00}
+#frame{background:var(--paper)}
+.copy{inset:0;width:1600px;pointer-events:none}.copy button{pointer-events:auto}
+.copy h1,.copy .lead,.copy .detail,.copy .intro{position:absolute;margin:0}
+.copy h1{left:80px;top:88px;width:536px;max-width:536px;font-size:84px;line-height:1.08;letter-spacing:-.03em;font-weight:400}
+.copy .lead{left:80px;top:360px;width:536px;max-width:536px;font-size:23px;line-height:1.5;color:#62605e}
+.copy .detail{left:80px;top:516px;width:536px;max-width:536px;min-height:252px;padding:28px 32px;background:var(--signal);border-radius:24px;color:var(--ink);pointer-events:auto}
+.copy .detail h2{font-size:30px;line-height:1.25;letter-spacing:-.02em;margin:0 0 20px;max-width:472px}
+.copy .detail p{font-size:23px;line-height:1.5;max-width:472px;letter-spacing:0}
+.copy .detail .detail-foot{font-size:14px;line-height:1.5;margin-top:16px;color:#4e4b19}
+.copy .detail.dense p{font-size:20px;line-height:1.45}.copy .detail.dense .detail-foot{font-size:14px;line-height:1.5}
+#diagramPanel{position:absolute;left:648px;top:64px;width:872px;height:704px;border-radius:24px;background:#eceae8;z-index:0}
+.diagram-dark #diagramPanel{background:#101110}
+/* Preserve the original coordinates and scale across every page and build. */
+#geometry,#particleSpace,#geometryLabels{left:650px!important;top:65px!important;width:900px!important;height:700px!important}
+.slide-foot{left:80px;right:80px;bottom:36px;border-top:0;padding-top:0}
+.slide-foot #chapters{gap:24px}.slide-foot button{font-size:15px}.slide-foot button.active{color:var(--ink)}.slide-foot button.active:before{display:none}
+.slide-foot button.active:after{content:'';position:absolute;bottom:-7px;left:0;right:0;height:3px;background:var(--signal)}
+#sceneCount{font-size:16px}
+.cover .copy,.closing .copy{inset:0;width:1600px}
+.cover .copy h1,.closing .copy h1{left:80px;top:160px;width:730px;max-width:730px;font-size:100px;line-height:1.08;letter-spacing:-.035em}
+.cover #diagramPanel,.closing #diagramPanel{left:864px;top:64px;width:656px;height:704px;background:#101110}
+.cover .copy .lead,.closing .copy .lead{left:80px;top:490px;width:700px;max-width:700px;font-size:28px;line-height:1.5;color:#62605e}
+.cover .copy .intro{left:80px;top:650px;padding:14px 24px;border:0;border-radius:24px;background:var(--signal);color:var(--ink);font-size:20px}
+.cover .copy .intro:hover{background:#eeea45}
+.closing .copy .detail{left:80px;top:580px;width:680px;max-width:680px;min-height:0;padding:0;background:none;color:var(--ink)}
+.closing .copy .detail h2{font-size:34px;max-width:680px;line-height:1.5}
+.film .copy{inset:0;width:1600px}.film .copy h1{left:86px;top:285px;width:810px;max-width:810px;font-size:86px;line-height:1.14}.film .copy .lead{left:86px;top:510px;width:790px;max-width:790px;font-size:24px;color:#ababab}.film #diagramPanel{display:none}
+.is-english{font-family:'Manrope',sans-serif}
+.is-english .copy h1{font-size:84px;letter-spacing:-.04em;text-wrap:balance}
+.is-english .copy h1.title-compact{font-size:72px;line-height:1.12}
+.is-english .copy .lead{font-size:23px;line-height:1.45}
+.is-english .copy .detail h2{font-size:30px;line-height:1.2;letter-spacing:-.02em}
+.is-english .copy .detail p{font-size:22px;line-height:1.4}
+.is-english .copy .detail.dense p{font-size:20px;line-height:1.4}
+.is-english .copy .detail .detail-foot{font-size:14px;line-height:1.4}
+.is-english .cover .copy h1,.is-english .closing .copy h1{font-size:100px;line-height:1.02;width:730px;max-width:730px;text-wrap:initial}
+.is-english .cover .copy h1{top:138px}
+.is-english .cover .copy .lead,.is-english .closing .copy .lead{font-size:28px}
+.is-english .closing .copy .detail h2{font-size:32px}
+.is-english .film .copy h1{font-size:86px;width:810px;max-width:810px}
+#language{border:1px solid var(--line);border-radius:18px;padding:6px 13px;margin-left:8px;min-width:68px}
+@media(max-width:650px){.utility{gap:0}.utility button{padding:7px 7px}#language{min-width:48px;margin-left:3px;padding:5px 9px}.is-english .utility button{font-size:11px;padding:7px 6px}}
+@media print{.copy h1,.copy .lead,.copy .detail{position:static!important;width:auto!important}.copy{position:static;width:auto}#diagramPanel{display:none}}
+
+/* Tim Brown: real portrait and four career milestones on the existing stage. */
+#profilePanel{position:absolute;inset:0;z-index:2;pointer-events:none}
+#profilePortrait{position:absolute;left:680px;top:112px;width:344px;height:608px;object-fit:cover;object-position:50% 46%;filter:grayscale(1);border-radius:16px;background:var(--soft)}
+#profileCareer{position:absolute;left:1104px;top:136px;width:360px;margin:0;padding:0;list-style:none;color:#f7f7f2}
+#profileCareer li{height:144px;margin:0;padding:0}
+.career-year{font-size:17px;line-height:1.2;letter-spacing:.02em;color:#ababab;margin:0}
+#profileCareer h3{font-size:26px;line-height:1.25;font-weight:400;letter-spacing:-.02em;margin:12px 0 14px}
+.career-body{font-size:20px;line-height:1.45;color:#ababab;margin:0;max-width:348px}
+#profileCareer li.active .career-year,#profileCareer li.active h3{color:var(--signal)}
+.is-english #profileCareer h3{font-size:25px}.is-english .career-body{font-size:19px;line-height:1.4}
+@media print{#profilePanel{display:none!important}}
+
+/* Source-faithful training frameworks: stable semantic diagrams above points. */
+#frameworkLayer{position:absolute;left:648px;top:64px;width:872px;height:704px;z-index:2;pointer-events:none;color:#f7f7f2}
+#frameworkLayer svg{display:block;width:100%;height:100%;overflow:hidden;fill:none;stroke:none;font-variant-numeric:tabular-nums}
+.framework-scene #geometry,.framework-scene #geometryLabels,.framework-scene #particleSpace{display:none}
+.fw-emphasis > text,.fw-emphasis > rect,.fw-emphasis > circle,.fw-emphasis > path{transition:fill 850ms ease,stroke 850ms ease}
+.fw-emphasis.active > text{fill:#f7f250}.fw-emphasis.active > rect,.fw-emphasis.active > circle,.fw-emphasis.active > path{stroke:#f7f250}.fw-emphasis.active > circle{fill:#f7f250}
+.framework-wide #diagramPanel{left:80px;top:230px;width:1440px;height:530px;border-radius:16px}
+.framework-wide #frameworkLayer{left:80px;top:230px;width:1440px;height:530px}
+.framework-wide .copy h1{left:80px;top:73px;width:1440px;max-width:1440px;font-size:64px;line-height:1.08;white-space:normal;text-wrap:initial}
+.framework-wide .copy .lead{left:80px;top:166px;width:1440px;max-width:1440px;font-size:24px;line-height:1.4}
+.framework-wide .copy .detail{display:none}
+.is-english .framework-wide .copy h1,.is-english .framework-wide .copy h1.title-compact{font-size:60px;line-height:1.08}
+#frameworkCaption{position:absolute;left:80px;top:785px;width:1440px;margin:0;font-size:21px;line-height:1.3;letter-spacing:0;color:#62605e;pointer-events:none}
+@media(prefers-reduced-motion:reduce){.fw-emphasis > *{transition:none!important}}
+@media print{#frameworkLayer,#frameworkCaption{display:none!important}}
+
+#frameworkCaption{line-height:1.4;max-height:59px;margin:0;color:#62605e}
+#practiceContent{padding-bottom:22px;border-bottom:1px solid var(--line)}
+#practiceContent h4:first-child{color:var(--accent);margin-top:22px}
+#practiceContent h3{margin:16px 0}
+#practiceContent p{font-size:16px;line-height:1.75}
+@media(max-width:650px){.utility{flex-wrap:wrap}.toolbar{height:124px}#notesPanel{bottom:124px}}
+
+.fw-emphasis.active > text.fw-letter{fill:#101110}
+
+/* Particle narration precedes source-detail presentation. */
+.method-prelude #frameworkLayer,.method-prelude #sourceFigure,.method-prelude #frameworkCaption{display:none!important}
+.method-prelude #geometry,.method-prelude #geometryLabels,.method-prelude #particleSpace{display:block}
+#sourceFigure{position:absolute;left:80px;top:230px;width:1440px;height:530px;z-index:2;overflow:hidden;background:#fcfafa}
+#sourceFigure svg{width:100%;height:100%;display:block;stroke:none}
+#sourceFigure image{filter:none}
+.source-scene #diagramPanel{background:#fcfafa}
+.fw-emphasis.pending{visibility:visible}
+.source-scene #frameworkCaption{font-size:20px;line-height:1.4;max-height:70px;top:773px}
+
+#sourceFigure{cursor:zoom-in}#sourceFigure:focus-visible{outline:2px solid #625e00;outline-offset:4px}
+#figureDialog{width:calc(100vw - 40px);max-width:1600px;height:90vh;max-height:90vh;padding:24px;background:#fcfafa;color:#111}
+#figureDialog .dialogtop{margin-bottom:16px}#figureDialog .dialogtop h2{font-size:24px;letter-spacing:-.02em}#figureDialog .dialogtop button{border:1px solid #d6d3d0;padding:8px 14px;margin-left:12px}
+#figureScroll{height:calc(100% - 68px);overflow:auto}#figureFull{display:block;width:100%;max-width:none;height:auto}#figureFull.magnified{width:200%}
+@media(max-width:650px){#figureDialog{width:calc(100vw - 16px);padding:12px}#figureDialog .dialogtop h2{font-size:16px}#figureDialog .dialogtop button{padding:6px;margin-left:6px}}
+
+/* A common diagram surface: white text, thin grey structure, yellow teaching focus. */
+#frameworkLayer{pointer-events:auto;cursor:zoom-in}
+#frameworkLayer:focus-visible{outline:2px solid #625e00;outline-offset:5px}
+#frameworkCaption{top:776px;font-size:20px;max-height:65px}
+#figureFull{background:#101110}
+.fw-emphasis.active > circle{fill:inherit}
+.fw-emphasis.active > text{fill:#f7f250}
+.framework-wide #frameworkLayer svg{border-radius:16px}
+
+/* Invisible masking rectangles must never become highlighted boxes. */
+.fw-emphasis.active > rect[stroke="none"]{stroke:none}
+.fw-emphasis.active > circle[stroke="none"]{fill:#f7f250;stroke:none}
+
+/* Refined training figures: stable hairline weights and quieter secondary copy. */
+#frameworkLayer svg{--diagram-stroke:1.2px}
+#frameworkLayer svg :is(path,rect,circle,ellipse,line,polygon,polyline):not([stroke="none"]){stroke-width:var(--diagram-stroke);vector-effect:none}
+#frameworkLayer text{stroke:none}
+#frameworkLayer .fw-fixed{fill:#f7f7f2!important}
+#frameworkLayer .fw-emphasis.active > rect[fill="#282828"]{fill:#282828}
+.diagram-transition{position:absolute;z-index:6;transform-origin:0 0;pointer-events:none;overflow:hidden;border-radius:16px}
+.diagram-transition img{position:absolute;inset:0;width:100%;height:100%;object-fit:fill}
+#frameworkLayer,#geometryLabels{transform-origin:0 0}
+#frameworkCaption{font-size:18px;line-height:1.45}
+
+/* Repeated build descriptions are available in notes, never repeated below a diagram. */
+#frameworkCaption{display:none!important}
+.shared-prelude #frameworkLayer{display:block!important;pointer-events:none}
+.shared-prelude #geometry,.shared-prelude #particleSpace,.shared-prelude #geometryLabels{left:648px!important;top:64px!important;width:872px!important;height:704px!important}
+#frameworkLayer .active > text[font-family]{fill:#33331f!important}
+#frameworkLayer .active > path[fill="url(#note-paper)"]{stroke:#f7f250;stroke-width:2!important}
+
+/* Official Double Diamond reference: kept separate from the teaching animation. */
+#diamondReference{position:absolute;right:104px;top:88px;width:48px;height:48px;padding:12px;z-index:2;border:1px solid #ffffff30;border-radius:50%;color:#d7d9d8;background:#101110}
+#diamondReference svg{width:24px;height:24px;stroke-width:1.5}
+#diamondReference:hover{color:#f7f250;border-color:#f7f250;background:#252727}
+#diamondReference:focus-visible{outline-color:#f7f250}
+#figureDialog[open]{display:flex;flex-direction:column}
+#figureDialog .dialogtop{flex-shrink:0}
+#figureDialog .dialogtop>div{display:flex;flex-shrink:0}
+#figureScroll{height:auto;flex:1;min-height:0}
+#figureCredit{font-size:13px;line-height:1.6;color:#606060;margin:0 0 14px;flex-shrink:0}
+#figureCredit a{color:inherit;text-underline-offset:3px}
+#figureDialog.official-figure #figureScroll{background:#fff;text-align:center}
+#figureDialog.official-figure #figureFull{width:auto;max-width:100%;height:auto;max-height:100%;margin:0 auto;background:#fff;object-fit:contain}
+#figureDialog.official-figure #figureFull.magnified{width:200%;max-width:none;max-height:none}
+@media(max-width:650px){#figureCredit{font-size:11px;margin-bottom:10px}#figureDialog .dialogtop{align-items:flex-start}}
+
+/* Bilingual typography: distinguish equal sizes with weight before color. */
+:root{--type-display:80px;--type-scene-title:60px;--type-body:22px;--type-support:18px;--type-bold-weight:700;--type-medium-weight:500;--type-regular-weight:400;--type-thin-weight:200;--type-ultrathin-weight:100}
+.copy h1{font-size:var(--type-display);font-weight:700;letter-spacing:-.025em;line-height:1.12}
+.is-english .copy h1{font-size:76px;font-weight:700;line-height:1.12}
+.is-english .copy h1.title-compact{font-size:68px;line-height:1.15}
+.cover .copy h1,.closing .copy h1{font-weight:700}
+.copy .lead{font-size:22px;font-weight:200;line-height:1.55;color:var(--ink)}
+.cover .copy .lead,.closing .copy .lead{font-weight:100;color:var(--ink)}
+.copy .detail h2{font-size:30px;font-weight:700;line-height:1.3;margin-bottom:14px}
+.copy .detail p{font-size:22px;font-weight:400;line-height:1.6}
+.copy .detail.dense p{font-size:19px;line-height:1.55}
+.framework-wide .copy h1,.is-english .framework-wide .copy h1,.is-english .framework-wide .copy h1.title-compact{font-size:var(--type-scene-title);font-weight:700}
+.framework-wide .copy .lead{font-size:22px;font-weight:200;line-height:1.5;color:var(--ink)}
+.fw-emphasis.active>text[data-type-role="label"],.fw-emphasis.active>text[data-type-role="title"]{font-weight:700}
+#notesPanel h3,#notesPanel h4,#fullContent strong,.dialogtop h2,#profileCareer h3{font-weight:700}
+.career-year{font-weight:500}.career-body{font-weight:400}
+.slide-foot button,#sceneCount,#buildCount{font-weight:400}
+
+.is-english .copy .lead{font-size:22px;line-height:1.55}
+.is-english .copy .detail h2{font-size:30px;line-height:1.3}
+.is-english .copy .detail p{font-size:22px;line-height:1.6}
+.is-english .copy .detail.dense p{font-size:19px;line-height:1.55}
+.is-english .framework-wide .copy .lead{font-size:22px;line-height:1.5}
+.fw-emphasis.active>text[data-type-role="small"]{font-weight:500}
+
+/* Embedded variable fonts: real weights, with equal ink for primary/supporting copy. */
+body{font-family:'Manrope','Noto Sans SC',sans-serif;font-weight:400;font-synthesis:none;--type-heading-weight:900;--type-focus-weight:800}
+body.is-english{font-family:'Manrope','Noto Sans SC',sans-serif;--type-heading-weight:800;--type-focus-weight:700}
+.copy h1,.cover .copy h1,.closing .copy h1,.framework-wide .copy h1,.is-english .copy h1,.is-english .framework-wide .copy h1,.is-english .framework-wide .copy h1.title-compact{font-weight:var(--type-heading-weight)}
+.copy .detail h2,.is-english .copy .detail h2,#profileCareer h3{font-weight:var(--type-focus-weight)}
+.copy .lead,.framework-wide .copy .lead{font-weight:200}
+.cover .copy .lead,.closing .copy .lead{font-weight:100}
+.is-english .cover .copy .lead,.is-english .closing .copy .lead{font-weight:200}
+.fw-emphasis.active>text[data-type-role="label"],.fw-emphasis.active>text[data-type-role="title"]{font-weight:var(--type-focus-weight)}
+.fw-emphasis.active>text[data-type-role="small"]{font-weight:700}
+.career-year{font-weight:500;color:#f7f7f2}.career-body{font-weight:200;color:#f7f7f2}
+#notesPanel h3,#notesPanel h4,.dialogtop h2,#fullContent strong{font-weight:700}
+
+.fw-emphasis.active>text[data-type-role="title"]{font-weight:var(--type-heading-weight)}
+
+/* Manrope display copy fits the existing cover column at its real heavy weight. */
+.is-english .cover .copy h1,.is-english .closing .copy h1{font-size:94px}
+
+/* Material Symbols: native outline paths, fixed to weight 100 / grade -25 / optical size 20. */
+.material-symbol{display:inline-block;flex:none;fill:currentColor;stroke:none;vertical-align:middle}
+.material-symbol path{fill:currentColor;stroke:none}
+.copy .detail h2.has-point-icon{display:flex;align-items:flex-start;gap:12px}
+.copy .detail h2.has-point-icon>.material-symbol{margin-top:3px}
+.copy .detail h2.has-point-icon>span{min-width:0;flex:1}
+.fw-emphasis.active .material-icon{color:#f7f250}
+
+/* Align the persona particle viewport to the center of its diagram plane. */
+.persona-prelude #geometry,.persona-prelude #particleSpace,.persona-prelude #geometryLabels{left:648px!important;top:76.889px!important;width:872px!important;height:678.222px!important}
+
+/* Large visual anchors: icon above the heading, left aligned with the copy. */
+.copy .detail{top:450px;padding-top:24px;padding-bottom:24px}
+.copy .detail h2.has-point-icon{flex-direction:column;align-items:flex-start;gap:12px}
+.copy .detail h2.has-point-icon>.material-symbol{margin-top:0}
+.copy .detail h2.has-point-icon>span{flex:none;width:100%}
+.diagram-transition svg{width:100%;height:100%;display:block;overflow:hidden}
+
+#geometry,#particleSpace{transform-origin:0 0}
+
+/* Match every ordinary particle viewport to its black plane without stretching. */
+.method-prelude:not(.shared-prelude) #geometry,.method-prelude:not(.shared-prelude) #particleSpace,.method-prelude:not(.shared-prelude) #geometryLabels,
+.canvas-standard #geometry,.canvas-standard #particleSpace,.canvas-standard #geometryLabels{left:648px!important;top:76.889px!important;width:872px!important;height:678.222px!important}
+
+/* Keep the teaching plane anchored to the ordinary diagram's lower edge (768px). */
+.copy .detail{top:auto;bottom:132px}
+
+/* Subtitles follow the actual title height instead of floating at mid-page. */
+.copy .lead,.is-english .copy .lead{font-size:20px;line-height:1.5}
+.cover .copy .lead,.closing .copy .lead,.is-english .cover .copy .lead,.is-english .closing .copy .lead{font-size:28px;line-height:1.5}
+.framework-wide .copy .lead,.is-english .framework-wide .copy .lead{font-size:22px;line-height:1.5}
+.copy .detail p.detail-context,.is-english .copy .detail p.detail-context{margin-top:16px;padding-top:12px;border-top:1px solid #11111130;font-size:18px;line-height:1.5;font-weight:400}
+
+/* Extend the slide's paper across every screen ratio; preserve the artwork's proportions. */
+@media screen{
+ body,#screen{background:var(--paper)}
+ :fullscreen .shell{height:100dvh}
+ :fullscreen #screen{min-height:0}
+ :fullscreen .toolbar{position:fixed;left:0;right:0;bottom:0;z-index:4;opacity:0;transition:opacity 180ms ease}
+ :fullscreen .toolbar:hover,:fullscreen .toolbar:has(:focus-visible){opacity:1}
+ :fullscreen #notesPanel{bottom:0}
+}
+@media screen and (hover:none){:fullscreen .toolbar{opacity:1}}

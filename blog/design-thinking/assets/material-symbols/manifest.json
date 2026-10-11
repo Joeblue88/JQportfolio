@@ -1,0 +1,774 @@
+{
+  "library": "Material Symbols Outlined",
+  "axes": {
+    "FILL": 0,
+    "GRAD": -25,
+    "opsz": 20,
+    "wght": 100
+  },
+  "source": "https://github.com/google/material-design-icons/tree/master/variablefont",
+  "fontSha256": "5ca6cdf74da4018e8a7687995c9e392b1a7ec49588fade2be3a97a2a06dd3262",
+  "icons": {
+    "accessible": {
+      "codepoint": "e914",
+      "file": "accessible.svg"
+    },
+    "account_tree": {
+      "codepoint": "e97a",
+      "file": "account_tree.svg"
+    },
+    "all_inclusive": {
+      "codepoint": "eb3d",
+      "file": "all_inclusive.svg"
+    },
+    "analytics": {
+      "codepoint": "ef3e",
+      "file": "analytics.svg"
+    },
+    "arrow_forward": {
+      "codepoint": "e5c8",
+      "file": "arrow_forward.svg"
+    },
+    "auto_stories": {
+      "codepoint": "e666",
+      "file": "auto_stories.svg"
+    },
+    "autorenew": {
+      "codepoint": "e863",
+      "file": "autorenew.svg"
+    },
+    "badge": {
+      "codepoint": "ea67",
+      "file": "badge.svg"
+    },
+    "balance": {
+      "codepoint": "eaf6",
+      "file": "balance.svg"
+    },
+    "build": {
+      "codepoint": "f8cd",
+      "file": "build.svg"
+    },
+    "call": {
+      "codepoint": "f0d4",
+      "file": "call.svg"
+    },
+    "campaign": {
+      "codepoint": "ef49",
+      "file": "campaign.svg"
+    },
+    "cancel": {
+      "codepoint": "e888",
+      "file": "cancel.svg"
+    },
+    "category": {
+      "codepoint": "e72c",
+      "file": "category.svg"
+    },
+    "chat": {
+      "codepoint": "e0c9",
+      "file": "chat.svg"
+    },
+    "chat_bubble": {
+      "codepoint": "e0cb",
+      "file": "chat_bubble.svg"
+    },
+    "check_circle": {
+      "codepoint": "f0be",
+      "file": "check_circle.svg"
+    },
+    "chevron_left": {
+      "codepoint": "e5cb",
+      "file": "chevron_left.svg"
+    },
+    "chevron_right": {
+      "codepoint": "e5cc",
+      "file": "chevron_right.svg"
+    },
+    "compare": {
+      "codepoint": "e3b9",
+      "file": "compare.svg"
+    },
+    "devices": {
+      "codepoint": "e326",
+      "file": "devices.svg"
+    },
+    "directions_walk": {
+      "codepoint": "e536",
+      "file": "directions_walk.svg"
+    },
+    "diversity_3": {
+      "codepoint": "f8d9",
+      "file": "diversity_3.svg"
+    },
+    "domain": {
+      "codepoint": "e7ee",
+      "file": "domain.svg"
+    },
+    "draw": {
+      "codepoint": "e746",
+      "file": "draw.svg"
+    },
+    "edit": {
+      "codepoint": "f097",
+      "file": "edit.svg"
+    },
+    "emoji_events": {
+      "codepoint": "ea23",
+      "file": "emoji_events.svg"
+    },
+    "engineering": {
+      "codepoint": "ea3d",
+      "file": "engineering.svg"
+    },
+    "event": {
+      "codepoint": "e878",
+      "file": "event.svg"
+    },
+    "event_available": {
+      "codepoint": "e614",
+      "file": "event_available.svg"
+    },
+    "explore": {
+      "codepoint": "e87a",
+      "file": "explore.svg"
+    },
+    "fact_check": {
+      "codepoint": "f0c5",
+      "file": "fact_check.svg"
+    },
+    "favorite": {
+      "codepoint": "e87e",
+      "file": "favorite.svg"
+    },
+    "filter_alt": {
+      "codepoint": "ef4f",
+      "file": "filter_alt.svg"
+    },
+    "flag": {
+      "codepoint": "f0c6",
+      "file": "flag.svg"
+    },
+    "flight": {
+      "codepoint": "e539",
+      "file": "flight.svg"
+    },
+    "folder_open": {
+      "codepoint": "e2c8",
+      "file": "folder_open.svg"
+    },
+    "format_list_bulleted": {
+      "codepoint": "e241",
+      "file": "format_list_bulleted.svg"
+    },
+    "forum": {
+      "codepoint": "e8af",
+      "file": "forum.svg"
+    },
+    "gavel": {
+      "codepoint": "e90e",
+      "file": "gavel.svg"
+    },
+    "grid_view": {
+      "codepoint": "e9b0",
+      "file": "grid_view.svg"
+    },
+    "group": {
+      "codepoint": "ea21",
+      "file": "group.svg"
+    },
+    "group_add": {
+      "codepoint": "e7f0",
+      "file": "group_add.svg"
+    },
+    "groups": {
+      "codepoint": "f233",
+      "file": "groups.svg"
+    },
+    "handshake": {
+      "codepoint": "ebcb",
+      "file": "handshake.svg"
+    },
+    "healing": {
+      "codepoint": "e3f3",
+      "file": "healing.svg"
+    },
+    "hearing": {
+      "codepoint": "e023",
+      "file": "hearing.svg"
+    },
+    "help": {
+      "codepoint": "e8fd",
+      "file": "help.svg"
+    },
+    "history": {
+      "codepoint": "e8b3",
+      "file": "history.svg"
+    },
+    "hub": {
+      "codepoint": "e9f4",
+      "file": "hub.svg"
+    },
+    "info": {
+      "codepoint": "e88e",
+      "file": "info.svg"
+    },
+    "inventory_2": {
+      "codepoint": "e1a1",
+      "file": "inventory_2.svg"
+    },
+    "layers": {
+      "codepoint": "e53b",
+      "file": "layers.svg"
+    },
+    "lightbulb": {
+      "codepoint": "e90f",
+      "file": "lightbulb.svg"
+    },
+    "local_grocery_store": {
+      "codepoint": "e8cc",
+      "file": "local_grocery_store.svg"
+    },
+    "location_on": {
+      "codepoint": "f1db",
+      "file": "location_on.svg"
+    },
+    "map": {
+      "codepoint": "e55b",
+      "file": "map.svg"
+    },
+    "memory": {
+      "codepoint": "e322",
+      "file": "memory.svg"
+    },
+    "menu_book": {
+      "codepoint": "ea19",
+      "file": "menu_book.svg"
+    },
+    "monitoring": {
+      "codepoint": "f190",
+      "file": "monitoring.svg"
+    },
+    "my_location": {
+      "codepoint": "e55c",
+      "file": "my_location.svg"
+    },
+    "north": {
+      "codepoint": "f1e0",
+      "file": "north.svg"
+    },
+    "payments": {
+      "codepoint": "ef63",
+      "file": "payments.svg"
+    },
+    "person": {
+      "codepoint": "f0d3",
+      "file": "person.svg"
+    },
+    "person_add": {
+      "codepoint": "ea4d",
+      "file": "person_add.svg"
+    },
+    "person_search": {
+      "codepoint": "f106",
+      "file": "person_search.svg"
+    },
+    "photo_camera": {
+      "codepoint": "e412",
+      "file": "photo_camera.svg"
+    },
+    "pie_chart": {
+      "codepoint": "f0da",
+      "file": "pie_chart.svg"
+    },
+    "priority_high": {
+      "codepoint": "e645",
+      "file": "priority_high.svg"
+    },
+    "psychology": {
+      "codepoint": "ea4a",
+      "file": "psychology.svg"
+    },
+    "public": {
+      "codepoint": "e80b",
+      "file": "public.svg"
+    },
+    "publish": {
+      "codepoint": "e255",
+      "file": "publish.svg"
+    },
+    "receipt_long": {
+      "codepoint": "ef6e",
+      "file": "receipt_long.svg"
+    },
+    "record_voice_over": {
+      "codepoint": "e91f",
+      "file": "record_voice_over.svg"
+    },
+    "refresh": {
+      "codepoint": "e5d5",
+      "file": "refresh.svg"
+    },
+    "report_problem": {
+      "codepoint": "f083",
+      "file": "report_problem.svg"
+    },
+    "restaurant": {
+      "codepoint": "e56c",
+      "file": "restaurant.svg"
+    },
+    "rocket_launch": {
+      "codepoint": "eb9b",
+      "file": "rocket_launch.svg"
+    },
+    "route": {
+      "codepoint": "eacd",
+      "file": "route.svg"
+    },
+    "schedule": {
+      "codepoint": "efd6",
+      "file": "schedule.svg"
+    },
+    "school": {
+      "codepoint": "e80c",
+      "file": "school.svg"
+    },
+    "science": {
+      "codepoint": "ea4b",
+      "file": "science.svg"
+    },
+    "search": {
+      "codepoint": "ef7a",
+      "file": "search.svg"
+    },
+    "select_all": {
+      "codepoint": "e162",
+      "file": "select_all.svg"
+    },
+    "sentiment_dissatisfied": {
+      "codepoint": "e811",
+      "file": "sentiment_dissatisfied.svg"
+    },
+    "sentiment_satisfied": {
+      "codepoint": "e813",
+      "file": "sentiment_satisfied.svg"
+    },
+    "settings": {
+      "codepoint": "e8b8",
+      "file": "settings.svg"
+    },
+    "settings_input_component": {
+      "codepoint": "e8c1",
+      "file": "settings_input_component.svg"
+    },
+    "share": {
+      "codepoint": "e80d",
+      "file": "share.svg"
+    },
+    "shield": {
+      "codepoint": "e9e0",
+      "file": "shield.svg"
+    },
+    "shopping_cart": {
+      "codepoint": "e8cc",
+      "file": "shopping_cart.svg"
+    },
+    "sort": {
+      "codepoint": "e164",
+      "file": "sort.svg"
+    },
+    "south": {
+      "codepoint": "f1e3",
+      "file": "south.svg"
+    },
+    "star": {
+      "codepoint": "f09a",
+      "file": "star.svg"
+    },
+    "storefront": {
+      "codepoint": "ea12",
+      "file": "storefront.svg"
+    },
+    "support_agent": {
+      "codepoint": "f0e2",
+      "file": "support_agent.svg"
+    },
+    "sync": {
+      "codepoint": "e627",
+      "file": "sync.svg"
+    },
+    "task_alt": {
+      "codepoint": "e2e6",
+      "file": "task_alt.svg"
+    },
+    "theater_comedy": {
+      "codepoint": "ea66",
+      "file": "theater_comedy.svg"
+    },
+    "thumb_up": {
+      "codepoint": "f577",
+      "file": "thumb_up.svg"
+    },
+    "timelapse": {
+      "codepoint": "e422",
+      "file": "timelapse.svg"
+    },
+    "timeline": {
+      "codepoint": "e922",
+      "file": "timeline.svg"
+    },
+    "touch_app": {
+      "codepoint": "e913",
+      "file": "touch_app.svg"
+    },
+    "travel_explore": {
+      "codepoint": "e2db",
+      "file": "travel_explore.svg"
+    },
+    "trending_up": {
+      "codepoint": "e8e5",
+      "file": "trending_up.svg"
+    },
+    "tune": {
+      "codepoint": "e429",
+      "file": "tune.svg"
+    },
+    "update": {
+      "codepoint": "e923",
+      "file": "update.svg"
+    },
+    "verified": {
+      "codepoint": "ef76",
+      "file": "verified.svg"
+    },
+    "visibility": {
+      "codepoint": "e8f4",
+      "file": "visibility.svg"
+    },
+    "warning": {
+      "codepoint": "f083",
+      "file": "warning.svg"
+    },
+    "zoom_in": {
+      "codepoint": "e8ff",
+      "file": "zoom_in.svg"
+    }
+  },
+  "sceneItems": {
+    "background": [
+      "draw",
+      "domain",
+      "forum"
+    ],
+    "brown": [
+      "person",
+      "menu_book",
+      "auto_stories"
+    ],
+    "enterprise": [
+      "groups",
+      "route",
+      "hub"
+    ],
+    "overview": [
+      "search",
+      "fact_check",
+      "person_search",
+      "route",
+      "lightbulb",
+      "handshake"
+    ],
+    "diamond": [
+      "search",
+      "filter_alt",
+      "lightbulb",
+      "task_alt"
+    ],
+    "innovation": [
+      "favorite",
+      "build",
+      "trending_up"
+    ],
+    "problem": [
+      "payments",
+      "travel_explore",
+      "person_search",
+      "memory"
+    ],
+    "business-methods": [
+      "hub",
+      "sentiment_satisfied",
+      "flight"
+    ],
+    "stakeholder-circle": [
+      "group",
+      "priority_high",
+      "hub",
+      "account_tree"
+    ],
+    "hopes": [
+      "sentiment_satisfied",
+      "sentiment_dissatisfied",
+      "category"
+    ],
+    "balloon": [
+      "north",
+      "south",
+      "balance"
+    ],
+    "research-levels": [
+      "public",
+      "my_location",
+      "directions_walk"
+    ],
+    "research-audience": [
+      "person",
+      "shopping_cart",
+      "groups",
+      "school",
+      "group_add"
+    ],
+    "customer-user": [
+      "shopping_cart",
+      "person",
+      "person_add",
+      "storefront"
+    ],
+    "demand-types": [
+      "cancel",
+      "help",
+      "check_circle"
+    ],
+    "qual-methods": [
+      "forum",
+      "call",
+      "groups",
+      "diversity_3"
+    ],
+    "ab-process": [
+      "search",
+      "science",
+      "compare",
+      "monitoring",
+      "publish"
+    ],
+    "ab-cautions": [
+      "group",
+      "tune",
+      "monitoring"
+    ],
+    "qual-quant": [
+      "forum",
+      "analytics"
+    ],
+    "purchase": [
+      "person_add",
+      "touch_app",
+      "autorenew",
+      "payments",
+      "share"
+    ],
+    "gemba": [
+      "location_on",
+      "forum"
+    ],
+    "aeiou": [
+      "directions_walk",
+      "location_on",
+      "hub",
+      "inventory_2",
+      "person",
+      "lightbulb",
+      "help"
+    ],
+    "bus": [
+      "schedule",
+      "map",
+      "groups"
+    ],
+    "inclusion": [
+      "accessible",
+      "healing",
+      "record_voice_over"
+    ],
+    "persona-definition": [
+      "fact_check",
+      "groups",
+      "badge"
+    ],
+    "model-methods": [
+      "groups",
+      "psychology",
+      "filter_alt",
+      "hub",
+      "update"
+    ],
+    "nonlinear": [
+      "arrow_forward",
+      "autorenew",
+      "account_tree",
+      "check_circle"
+    ],
+    "segmentation": [
+      "person_search",
+      "rocket_launch",
+      "groups"
+    ],
+    "stakeholder-map": [
+      "favorite",
+      "campaign",
+      "groups"
+    ],
+    "stakeholder-process": [
+      "format_list_bulleted",
+      "grid_view",
+      "sort",
+      "tune",
+      "select_all"
+    ],
+    "empathy": [
+      "psychology",
+      "hearing",
+      "visibility",
+      "chat",
+      "sentiment_dissatisfied",
+      "emoji_events"
+    ],
+    "affinity": [
+      "timelapse",
+      "share",
+      "restaurant",
+      "cancel",
+      "thumb_up",
+      "payments",
+      "local_grocery_store",
+      "photo_camera",
+      "groups",
+      "schedule",
+      "event",
+      "sentiment_satisfied"
+    ],
+    "toc-tob": [
+      "person",
+      "domain"
+    ],
+    "b2b-roles": [
+      "payments",
+      "shopping_cart",
+      "person",
+      "gavel",
+      "handshake",
+      "settings"
+    ],
+    "b2b-persona": [
+      "badge",
+      "flag",
+      "update"
+    ],
+    "persona-decisions": [
+      "flag",
+      "shopping_cart"
+    ],
+    "persona-drivers": [
+      "trending_up",
+      "warning"
+    ],
+    "persona-process": [
+      "person_search",
+      "groups",
+      "folder_open"
+    ],
+    "experience-system": [
+      "route",
+      "report_problem",
+      "account_tree"
+    ],
+    "persona-journey": [
+      "badge",
+      "route"
+    ],
+    "journey-types": [
+      "history",
+      "explore"
+    ],
+    "journey-map": [
+      "person",
+      "timeline",
+      "directions_walk",
+      "sentiment_satisfied",
+      "lightbulb"
+    ],
+    "rail": [
+      "timeline",
+      "layers",
+      "zoom_in"
+    ],
+    "peak-combined": [
+      "shield",
+      "star",
+      "flag",
+      "shield",
+      "star",
+      "flag"
+    ],
+    "hmw": [
+      "report_problem",
+      "lightbulb",
+      "filter_alt"
+    ],
+    "ideation": [
+      "info",
+      "sync",
+      "event_available"
+    ],
+    "prototype": [
+      "devices",
+      "theater_comedy",
+      "fact_check"
+    ],
+    "loop": [
+      "visibility",
+      "psychology",
+      "edit",
+      "refresh"
+    ],
+    "theatre": [
+      "theater_comedy",
+      "engineering",
+      "settings_input_component"
+    ],
+    "blueprint-structure": [
+      "receipt_long",
+      "person",
+      "support_agent",
+      "engineering",
+      "settings",
+      "hub",
+      "verified",
+      "sentiment_satisfied",
+      "schedule",
+      "photo_camera"
+    ],
+    "lab": [
+      "person_search",
+      "lightbulb",
+      "task_alt"
+    ],
+    "ai": [
+      "search",
+      "psychology",
+      "science",
+      "all_inclusive"
+    ]
+  },
+  "legacyAliases": {
+    "sliders-horizontal": "tune",
+    "message-square-x": "cancel",
+    "message-square": "chat_bubble",
+    "message-square-check": "check_circle",
+    "chart-no-axes-combined": "monitoring",
+    "chart-pie": "pie_chart",
+    "users-round": "groups",
+    "map-pin": "location_on"
+  }
+}
